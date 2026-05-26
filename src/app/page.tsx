@@ -1,7 +1,15 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import styles from './page.module.css';
 
 export default function Home() {
+  const clients = [
+    { name: 'CCTI', src: '/logos/ccti.png' },
+    { name: 'Buses Vule', src: '/logos/buses-vule.png' },
+    { name: 'Falabella', src: '/logos/falabella.png' },
+    { name: 'CLEP', src: '/logos/clep.jpg' },
+  ];
+
   return (
     <>
       {/* Hero Section */}
@@ -44,13 +52,19 @@ export default function Home() {
       {/* Trust Section */}
       <section className={`${styles.trustSection} section-padding`}>
         <div className="container">
-          <h2 style={{ textAlign: 'center' }}>Empresas que confían en nosotros</h2>
+          <h2 style={{ textAlign: 'center' }}>Empresas que confían en nuestro trabajo</h2>
           <div className={styles.clientLogos}>
-            {/* Placeholders para logos */}
-            <div style={{ fontWeight: 'bold', fontSize: '1.5rem' }}>CCTI</div>
-            <div style={{ fontWeight: 'bold', fontSize: '1.5rem' }}>BUSES VULE</div>
-            <div style={{ fontWeight: 'bold', fontSize: '1.5rem' }}>FALABELLA</div>
-            <div style={{ fontWeight: 'bold', fontSize: '1.5rem' }}>CLEP</div>
+            {clients.map((client) => (
+              <div key={client.name} className={styles.clientLogoWrapper}>
+                <Image 
+                  src={client.src} 
+                  alt={`Logo de ${client.name}`} 
+                  width={150} 
+                  height={80} 
+                  className={styles.clientLogoImg}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
