@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from './proyectos.module.css';
 
 export const metadata = {
@@ -13,7 +14,8 @@ export default function Proyectos() {
       cliente: "CCTI",
       superficie: "50.000 m2",
       descripcion: "Pavimentación de alto tráfico y sistemas de drenaje para centro de distribución.",
-      tipo: "Pavimentación"
+      tipo: "Pavimentación",
+      image: "/img/deposito-logistico-ccti.jpg"
     },
     {
       id: 2,
@@ -21,7 +23,8 @@ export default function Proyectos() {
       cliente: "Buses Vule",
       superficie: "60.000 m2",
       descripcion: "Construcción de losas de hormigón armado y asfalto para flota de alto tonelaje.",
-      tipo: "Obras Civiles"
+      tipo: "Obras Civiles",
+      image: "/img/terminal-buses-san-antonio-vule.jpg"
     },
     {
       id: 3,
@@ -29,7 +32,8 @@ export default function Proyectos() {
       cliente: "Falabella",
       superficie: "35.000 m2",
       descripcion: "Movimiento de tierras y pavimentación industrial.",
-      tipo: "Movimiento de Tierras"
+      tipo: "Movimiento de Tierras",
+      image: "/img/centro-distribucion-norte-falabella.webp"
     },
     {
       id: 4,
@@ -37,7 +41,8 @@ export default function Proyectos() {
       cliente: "Varios",
       superficie: "20.000 m2",
       descripcion: "Pavimentación de calles y construcción de veredas/soleras.",
-      tipo: "Obras Viales"
+      tipo: "Obras Viales",
+      image: "/img/Urbanizacion-Industrial-San-Bernardo.webp"
     }
   ];
 
@@ -56,9 +61,13 @@ export default function Proyectos() {
             {proyectos.map((proy) => (
               <div key={proy.id} className={styles.proyectoCard}>
                 <div className={styles.proyectoImage}>
-                  {/* Placeholder */}
-                  <div style={{ backgroundColor: '#eee', width: '100%', height: '250px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    [Imagen Proyecto {proy.id}]
+                  <div style={{ position: 'relative', width: '100%', height: '250px' }}>
+                    <Image 
+                      src={proy.image} 
+                      alt={proy.titulo} 
+                      fill 
+                      style={{ objectFit: 'cover' }}
+                    />
                   </div>
                 </div>
                 <div className={styles.proyectoInfo}>
