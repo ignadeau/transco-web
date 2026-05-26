@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Logo from '../Logo';
 import styles from './Footer.module.css';
 
 export default function Footer() {
@@ -9,8 +10,8 @@ export default function Footer() {
       <div className="container">
         <div className={styles.footerGrid}>
           <div>
-            <h3 className={styles.footerTitle}>Constructora Transco</h3>
-            <p>Especialistas en pavimentación y obras civiles con más de 20 años de experiencia entregando calidad y confianza en cada proyecto.</p>
+            <Logo width={200} height={60} className={styles.footerLogo} />
+            <p style={{ marginTop: '1rem' }}>Especialistas en pavimentación y obras civiles con más de 20 años de experiencia entregando calidad y confianza en cada proyecto.</p>
           </div>
           
           <div>

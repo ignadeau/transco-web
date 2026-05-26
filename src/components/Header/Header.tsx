@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Logo from '../Logo';
 import styles from './Header.module.css';
 
 export default function Header() {
@@ -25,9 +26,8 @@ export default function Header() {
       <div className={styles.mainHeader}>
         <div className="container">
           <nav className={styles.navContainer}>
-            <Link href="/" className={styles.logo}>
-              {/* Aquí iría el componente Image con el logo real */}
-              <span>TRANSCO</span>
+            <Link href="/" className={styles.logoContainer}>
+              <Logo width={180} height={50} />
             </Link>
             
             <ul className={styles.navLinks}>
