@@ -1,0 +1,76 @@
+.pageHeader {
+  background-color: var(--primary-blue);
+  padding: 4rem 0;
+  color: var(--white);
+  text-align: center;
+}
+
+.pageHeader h1 {
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.pageHeader p {
+  opacity: 0.9;
+  font-size: 1.1rem;
+}
+
+.proyectosGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+}
+
+.proyectoCard {
+  background: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.proyectoCard:hover {
+  transform: translateY(-5px);
+}
+
+.proyectoInfo {
+  padding: 2rem;
+}
+
+.proyectoInfo h3 {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+}
+
+.tag {
+  background-color: var(--bg-light);
+  color: var(--primary-blue);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.desc {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: var(--text-light);
+}
+
+.ctaButton {
+  background-color: var(--primary-green);
+  color: var(--white);
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .proyectosGrid {
+    grid-template-columns: 1fr;
+  }
+}

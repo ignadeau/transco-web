@@ -1,0 +1,81 @@
+.header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--white);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.topBar {
+  background-color: var(--text-dark);
+  color: var(--white);
+  padding: 0.5rem 0;
+  font-size: 0.85rem;
+}
+
+.topBarContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactInfo {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mainHeader {
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--primary-blue);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+}
+
+.navLink {
+  font-weight: 500;
+  color: var(--text-dark);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+}
+
+.navLink:hover {
+  color: var(--primary-blue);
+}
+
+@media (max-width: 768px) {
+  .topBar {
+    display: none;
+  }
+  
+  .navLinks {
+    display: none; /* TODO: Implement Mobile Menu */
+  }
+}

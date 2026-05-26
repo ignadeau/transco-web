@@ -1,0 +1,52 @@
+.pageHeader {
+  background-color: var(--primary-blue);
+  padding: 4rem 0;
+  color: var(--white);
+  text-align: center;
+}
+
+.pageHeader h1 {
+  color: var(--white);
+  margin: 0;
+}
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.missionVisionGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.card {
+  background: var(--white);
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+
+.valueItem h4 {
+  margin: 1rem 0 0.5rem;
+}
+
+.valueItem span {
+  font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .aboutGrid, .missionVisionGrid {
+    grid-template-columns: 1fr;
+  }
+}

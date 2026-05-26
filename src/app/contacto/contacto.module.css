@@ -1,0 +1,86 @@
+.pageHeader {
+  background-color: var(--primary-blue);
+  padding: 4rem 0;
+  color: var(--white);
+  text-align: center;
+}
+
+.pageHeader h1 {
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+}
+
+.infoList {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.infoList li strong {
+  color: var(--primary-blue);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.contactFormContainer {
+  background-color: var(--bg-light);
+  padding: 3rem;
+  border-radius: 8px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.formGroup input, .formGroup textarea {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.submitBtn {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  padding: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.submitBtn:hover {
+  background-color: var(--secondary-blue);
+}
+
+.mapSection {
+  line-height: 0;
+}
+
+@media (max-width: 768px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
