@@ -31,17 +31,23 @@ export default function Home() {
           <h2 style={{ textAlign: 'center' }}>Nuestros Servicios Especializados</h2>
           <div className={styles.servicesGrid}>
             <div className={styles.serviceCard}>
-              <span className={styles.serviceIcon}>🚜</span>
+              <div style={{ position: 'relative', width: '100%', height: '200px', marginBottom: '1.5rem', borderRadius: '8px', overflow: 'hidden' }}>
+                <Image src="/img/movimiento-tierras.png" alt="Movimiento de Tierras" fill style={{ objectFit: 'cover' }} />
+              </div>
               <h3>Movimiento de Tierras</h3>
               <p>Preparación de terrenos y excavaciones con maquinaria de última generación para proyectos industriales y viales.</p>
             </div>
             <div className={styles.serviceCard}>
-              <span className={styles.serviceIcon}>🛣️</span>
+              <div style={{ position: 'relative', width: '100%', height: '200px', marginBottom: '1.5rem', borderRadius: '8px', overflow: 'hidden' }}>
+                <Image src="/img/proyecto-vial.png" alt="Pavimentación Asfáltica" fill style={{ objectFit: 'cover' }} />
+              </div>
               <h3>Pavimentación Asfáltica</h3>
               <p>Expertos en mezcla asfáltica en caliente para caminos, estacionamientos y plataformas industriales.</p>
             </div>
             <div className={styles.serviceCard}>
-              <span className={styles.serviceIcon}>🏗️</span>
+              <div style={{ position: 'relative', width: '100%', height: '200px', marginBottom: '1.5rem', borderRadius: '8px', overflow: 'hidden' }}>
+                <Image src="/img/obras-civiles.png" alt="Obras Civiles" fill style={{ objectFit: 'cover' }} />
+              </div>
               <h3>Obras Civiles</h3>
               <p>Construcción de infraestructura civil, soleras, veredas y sistemas de evacuación de aguas lluvias.</p>
             </div>
