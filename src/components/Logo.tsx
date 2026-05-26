@@ -6,12 +6,12 @@ interface LogoProps {
   height?: number;
 }
 
-export default function Logo({ className, width = 200, height = 60 }: LogoProps) {
+export default function Logo({ className, width = 250, height = 80 }: LogoProps) {
   return (
     <svg 
       width={width} 
       height={height} 
-      viewBox="0 0 300 100" 
+      viewBox="0 0 350 100" 
       fill="none" 
       xmlns="http://www.w3.org/2000/svg"
       className={className}
@@ -35,7 +35,7 @@ export default function Logo({ className, width = 200, height = 60 }: LogoProps)
       </text>
       
       {/* Subtexto: CONSTRUCTORA */}
-      <rect x="90" y="72" width="180" height="15" fill="#004b93" />
+      <rect x="90" y="72" width="220" height="15" fill="#004b93" />
       <text 
         x="95" 
         y="84" 
