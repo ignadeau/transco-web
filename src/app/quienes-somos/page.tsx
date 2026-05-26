@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from './nosotros.module.css';
 
 export const metadata = {
@@ -29,10 +30,14 @@ export default function QuienesSomos() {
                 Nuestra trayectoria se basa en el compromiso con la calidad y la satisfacción de nuestros clientes, entregando obras duraderas que cumplen con los más altos estándares técnicos del mercado.
               </p>
             </div>
-            <div className={styles.imagePlaceholder}>
-              {/* Imagen representativa */}
-              <div style={{ backgroundColor: '#ddd', width: '100%', height: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                [Imagen Corporativa]
+            <div className={styles.imageWrapper}>
+              <div style={{ position: 'relative', width: '100%', height: '450px', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
+                <Image 
+                  src="/img/quienes-somos.png" 
+                  alt="Equipo y maquinaria de Constructora Transco en obra" 
+                  fill 
+                  style={{ objectFit: 'cover' }}
+                />
               </div>
             </div>
           </div>
