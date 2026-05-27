@@ -1,3 +1,4 @@
+import ContactForm from '@/components/ContactForm/ContactForm';
 import styles from './contacto.module.css';
 
 export const metadata = {
@@ -43,27 +44,7 @@ export default function Contacto() {
               </ul>
             </div>
 
-            <div className={styles.contactFormContainer}>
-              <form className={styles.form}>
-                <div className={styles.formGroup}>
-                  <label htmlFor="nombre">Nombre Completo</label>
-                  <input type="text" id="nombre" name="nombre" placeholder="Tu nombre aquí" required />
-                </div>
-                <div className={styles.formGroup}>
-                  <label htmlFor="email">Correo Electrónico</label>
-                  <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required />
-                </div>
-                <div className={styles.formGroup}>
-                  <label htmlFor="telefono">Teléfono de Contacto</label>
-                  <input type="tel" id="telefono" name="telefono" placeholder="+56 9 XXXX XXXX" required />
-                </div>
-                <div className={styles.formGroup}>
-                  <label htmlFor="mensaje">Mensaje o Detalle del Proyecto</label>
-                  <textarea id="mensaje" name="mensaje" rows={5} placeholder="Escribe tu mensaje aquí..." required></textarea>
-                </div>
-                <button type="submit" className={styles.submitBtn}>Enviar Mensaje</button>
-              </form>
-            </div>
+            <ContactForm />
           </div>
         </div>
       </section>
