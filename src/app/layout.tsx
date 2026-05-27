@@ -17,28 +17,28 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Constructora Transco | Pavimentación y Obras Civiles en Chile",
-    template: "%s | Constructora Transco"
+    default: "Constructora Cumbres | Pavimentación y Obras Civiles en Chile",
+    template: "%s | Constructora Cumbres"
   },
   description: "Especialistas en pavimentación asfáltica, hormigón, soluciones viales y movimiento de tierras para el sector industrial y urbano en Chile con más de 20 años de experiencia.",
   keywords: ["pavimentación asfáltica", "obras civiles", "pavimentación urbana", "movimiento de tierras", "constructora chile", "pavimentos industriales"],
-  authors: [{ name: "Constructora Transco" }],
-  creator: "Constructora Transco",
-  publisher: "Constructora Transco",
+  authors: [{ name: "Constructora Cumbres" }],
+  creator: "Constructora Cumbres",
+  publisher: "Constructora Cumbres",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://transcochile.cl'), // Placeholder domain
+  metadataBase: new URL('https://cumbreschile.cl'), // Placeholder domain
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Constructora Transco | Pavimentación y Obras Civiles',
+    title: 'Constructora Cumbres | Pavimentación y Obras Civiles',
     description: 'Soluciones viales y proyectos de pavimentación de alta calidad con más de 20 años de trayectoria.',
-    url: 'https://transcochile.cl',
-    siteName: 'Constructora Transco',
+    url: 'https://cumbreschile.cl',
+    siteName: 'Constructora Cumbres',
     locale: 'es_CL',
     type: 'website',
   },

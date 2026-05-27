@@ -29,14 +29,12 @@ export default function Footer() {
             <ul className={styles.footerLinks}>
               <li>📍 Camino Padre Hurtado #19498, San Bernardo</li>
               <li>📞 +56 9 40265446</li>
-              <li>📧 info@transcochile.cl</li>
-              <li>📧 administracion@transcochile.cl</li>
             </ul>
           </div>
         </div>
         
         <div className={styles.bottomBar}>
-          <p>&copy; {currentYear} Constructora Transco Chile. Todos los derechos reservados.</p>
+          <p>&copy; {currentYear} Constructora Cumbres Chile. Todos los derechos reservados.</p>
           <p>Desarrollado con enfoque SEO de alta precisión.</p>
         </div>
       </div>

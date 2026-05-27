@@ -1,4 +1,3 @@
-import ContactForm from '@/components/ContactForm/ContactForm';
 import styles from './contacto.module.css';
 
 export const metadata = {
@@ -18,33 +17,37 @@ export default function Contacto() {
 
       <section className="section-padding">
         <div className="container">
-          <div className={styles.contactGrid}>
-            <div className={styles.contactInfo}>
-              <h2>Información de Contacto</h2>
-              <p>Estamos disponibles para resolver tus dudas técnicas y presupuestar tus proyectos con la mayor celeridad.</p>
+          <div className={styles.centeredContent}>
+            <div className={styles.contactCard}>
+              <h2>Canales Directos</h2>
+              <p className={styles.lead}>Estamos disponibles para resolver tus dudas técnicas y presupuestar tus proyectos con la mayor celeridad.</p>
               
-              <ul className={styles.infoList}>
-                <li>
-                  <strong>📍 Dirección:</strong><br />
-                  Camino Padre Hurtado #19498, San Bernardo, Región Metropolitana.
-                </li>
-                <li>
-                  <strong>📞 Teléfono:</strong><br />
-                  <a href="tel:+56940265446">+56 9 4026 5446</a>
-                </li>
-                <li>
-                  <strong>📧 Correo Electrónico:</strong><br />
-                  <a href="mailto:info@transcochile.cl">info@transcochile.cl</a><br />
-                  <a href="mailto:administracion@transcochile.cl">administracion@transcochile.cl</a>
-                </li>
-                <li>
-                  <strong>⏰ Horario de Atención:</strong><br />
-                  Lunes a Viernes: 08:30 - 18:30
-                </li>
-              </ul>
-            </div>
+              <div className={styles.infoGrid}>
+                <div className={styles.infoItem}>
+                  <div className={styles.icon}>📍</div>
+                  <h3>Dirección</h3>
+                  <p>Camino Padre Hurtado #19498,<br />San Bernardo, Región Metropolitana.</p>
+                </div>
+                
+                <div className={styles.infoItem}>
+                  <div className={styles.icon}>📞</div>
+                  <h3>Teléfono</h3>
+                  <p><a href="tel:+56940265446" className={styles.phoneLink}>+56 9 4026 5446</a></p>
+                </div>
+                
+                <div className={styles.infoItem}>
+                  <div className={styles.icon}>⏰</div>
+                  <h3>Horario de Atención</h3>
+                  <p>Lunes a Viernes<br />08:30 - 18:30</p>
+                </div>
+              </div>
 
-            <ContactForm />
+              <div className={styles.ctaWrapper}>
+                <a href="tel:+56940265446" className={styles.callNowBtn}>
+                  Llamar ahora
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -59,7 +62,7 @@ export default function Contacto() {
           loading="lazy" 
           referrerPolicy="no-referrer-when-downgrade" 
           src="https://maps.google.com/maps?q=Camino%20Padre%20Hurtado%2019498%2C%20San%20Bernardo%2C%20Chile&t=&z=15&ie=UTF8&iwloc=&output=embed"
-          title="Ubicación de Constructora Transco"
+          title="Ubicación de Constructora Cumbres"
         ></iframe>
       </section>
     </>

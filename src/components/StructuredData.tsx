@@ -2,10 +2,10 @@ export default function StructuredData() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "ConstructionBusiness",
-    "name": "Constructora Transco",
-    "image": "https://transcochile.cl/logo.png", // Placeholder
-    "@id": "https://transcochile.cl",
-    "url": "https://transcochile.cl",
+    "name": "Constructora Cumbres",
+    "image": "https://cumbreschile.cl/logo.png", // Placeholder
+    "@id": "https://cumbreschile.cl",
+    "url": "https://cumbreschile.cl",
     "telephone": "+56940265446",
     "address": {
       "@type": "PostalAddress",
@@ -33,7 +33,7 @@ export default function StructuredData() {
       "closes": "18:30"
     },
     "sameAs": [
-      "https://www.linkedin.com/company/constructora-transco" // Placeholder
+      "https://www.linkedin.com/company/constructora-cumbres" // Placeholder
     ]
   };
 

@@ -11,33 +11,34 @@ export default function Logo({ className, width = 250, height = 80 }: LogoProps)
     <svg 
       width={width} 
       height={height} 
-      viewBox="0 0 350 100" 
+      viewBox="0 0 400 100" 
       fill="none" 
       xmlns="http://www.w3.org/2000/svg"
       className={className}
-      aria-label="Constructora Transco"
+      aria-label="Constructora Cumbres"
+      style={{ '--logo-primary': 'var(--primary-blue, #11265F)', '--logo-text': 'currentColor' } as React.CSSProperties}
     >
-      {/* Isotipo: Representación abstracta de caminos/construcción */}
-      <path d="M10 70L40 30L70 70H10Z" fill="#00a651" />
-      <path d="M35 70L55 45L75 70H35Z" fill="#004b93" />
+      {/* Isotipo: Representación de "Cumbres" (montañas/picos) y construcción */}
+      <path d="M10 75L45 25L80 75H10Z" fill="var(--logo-primary)" />
+      <path d="M40 75L65 40L90 75H40Z" fill="#00a651" />
       
-      {/* Texto: TRANSCO */}
+      {/* Texto: CUMBRES */}
       <text 
-        x="90" 
+        x="105" 
         y="65" 
         fontFamily="Arial, sans-serif" 
         fontWeight="900" 
-        fontSize="48" 
-        fill="#004b93" 
-        letterSpacing="-1"
+        fontSize="44" 
+        fill="var(--logo-primary)" 
+        letterSpacing="-2"
       >
-        TRANSCO
+        CUMBRES
       </text>
       
       {/* Subtexto: CONSTRUCTORA */}
-      <rect x="90" y="72" width="220" height="15" fill="#004b93" />
+      <rect x="105" y="72" width="260" height="15" fill="var(--logo-primary)" />
       <text 
-        x="95" 
+        x="110" 
         y="84" 
         fontFamily="Arial, sans-serif" 
         fontWeight="bold" 
@@ -56,7 +57,7 @@ export default function Logo({ className, width = 250, height = 80 }: LogoProps)
         fontSize="10" 
         fill="#666666"
       >
-        Obras Civiles y Mantención
+        Obras Civiles y Soluciones Viales
       </text>
     </svg>
   );

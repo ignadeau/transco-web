@@ -3,7 +3,7 @@ import styles from './nosotros.module.css';
 
 export const metadata = {
   title: 'Quiénes Somos',
-  description: 'Conoce más sobre Constructora Transco, con más de 20 años de trayectoria liderando proyectos de pavimentación y obras civiles en la Región Metropolitana y todo Chile.',
+  description: 'Conoce más sobre Constructora Cumbres, con más de 20 años de trayectoria liderando proyectos de pavimentación y obras civiles en la Región Metropolitana y todo Chile.',
 };
 
 export default function QuienesSomos() {
@@ -34,7 +34,7 @@ export default function QuienesSomos() {
               <div style={{ position: 'relative', width: '100%', height: '450px', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
                 <Image 
                   src="/img/quienes-somos.png" 
-                  alt="Equipo y maquinaria de Constructora Transco en obra" 
+                  alt="Equipo y maquinaria de Constructora Cumbres en obra" 
                   fill 
                   style={{ objectFit: 'cover' }}
                 />

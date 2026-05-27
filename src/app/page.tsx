@@ -82,7 +82,7 @@ export default function Home() {
           <div className={styles.testimonialsGrid}>
             <div className={styles.testimonialCard}>
               <p className={styles.testimonialText}>
-                "Para la construcción y mantenimiento de nuestro depósito en Santiago, confiamos en Transco. Un perfecto equilibrio entre calidad y precio."
+                "Para la construcción y mantenimiento de nuestro depósito en Santiago, confiamos en Cumbres. Un perfecto equilibrio entre calidad y precio."
               </p>
               <p className={styles.testimonialAuthor}>Errol Jouannet</p>
               <p style={{ fontSize: '0.85rem' }}>Gerente General CCTI - Región Metropolitana</p>

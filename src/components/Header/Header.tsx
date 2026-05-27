@@ -13,9 +13,6 @@ export default function Header() {
                 <span>📞 +56 9 40265446</span>
               </div>
               <div className={styles.contactItem}>
-                <span>📧 info@transcochile.cl</span>
-              </div>
-              <div className={styles.contactItem}>
                 <span>📍 San Bernardo, Chile</span>
               </div>
             </div>

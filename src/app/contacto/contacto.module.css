@@ -10,68 +10,99 @@
   margin-bottom: 0.5rem;
 }
 
-.contactGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5rem;
-}
-
-.infoList {
-  margin-top: 2rem;
+.centeredContent {
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
-.infoList li strong {
-  color: var(--primary-blue);
-  display: block;
-  margin-bottom: 0.25rem;
-}
-
-.contactFormContainer {
+.contactCard {
   background-color: var(--bg-light);
-  padding: 3rem;
-  border-radius: 8px;
+  padding: 4rem;
+  border-radius: 12px;
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
-.form {
+.contactCard h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  max-width: 600px;
+  margin: 0 auto 3rem;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.infoItem {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  align-items: center;
+  gap: 1rem;
 }
 
-.formGroup {
+.icon {
+  font-size: 2.5rem;
+  background: var(--white);
+  width: 70px;
+  height: 70px;
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-.formGroup label {
-  font-weight: 600;
-  font-size: 0.9rem;
+.infoItem h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  color: var(--primary-blue);
 }
 
-.formGroup input, .formGroup textarea {
-  padding: 0.75rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-family: inherit;
+.infoItem p {
+  font-size: 0.95rem;
+  color: var(--text-dark);
 }
 
-.submitBtn {
+.phoneLink {
+  color: var(--primary-blue);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.ctaWrapper {
+  margin-top: 1rem;
+}
+
+.callNowBtn {
+  display: inline-block;
   background-color: var(--primary-blue);
   color: var(--white);
-  padding: 1rem;
+  padding: 1.2rem 3rem;
+  font-size: 1.1rem;
   font-weight: bold;
-  border-radius: 4px;
+  border-radius: 50px;
   text-transform: uppercase;
-  margin-top: 1rem;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(17, 38, 95, 0.3);
 }
 
-.submitBtn:hover {
+.callNowBtn:hover {
   background-color: var(--secondary-blue);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(11, 25, 64, 0.4);
 }
 
 .mapSection {
@@ -79,8 +110,16 @@
 }
 
 @media (max-width: 768px) {
-  .contactGrid {
+  .infoGrid {
     grid-template-columns: 1fr;
     gap: 3rem;
+  }
+  
+  .contactCard {
+    padding: 2.5rem 1.5rem;
+  }
+  
+  .contactCard h2 {
+    font-size: 1.8rem;
   }
 }
