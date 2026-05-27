@@ -70,10 +70,16 @@ export default function Contacto() {
 
       {/* Map Section */}
       <section className={styles.mapSection}>
-        <div style={{ backgroundColor: '#eee', width: '100%', height: '450px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          {/* Aquí se integrará el iframe de Google Maps */}
-          <p>[Mapa Interactivo Google Maps - San Bernardo]</p>
-        </div>
+        <iframe 
+          width="100%" 
+          height="450" 
+          style={{ border: 0, display: 'block' }} 
+          allowFullScreen={true} 
+          loading="lazy" 
+          referrerPolicy="no-referrer-when-downgrade" 
+          src="https://maps.google.com/maps?q=Camino%20Padre%20Hurtado%2019498%2C%20San%20Bernardo%2C%20Chile&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          title="Ubicación de Constructora Transco"
+        ></iframe>
       </section>
     </>
   );
